@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace GF.Debugger
 {
-    internal sealed partial class DebuggerManager : GameFrameworkModule, IDebuggerManager
+    public sealed partial class DebuggerManager : GameFrameworkModule, IDebuggerManager
     {
         /// <summary>
         /// 调试器窗口组。

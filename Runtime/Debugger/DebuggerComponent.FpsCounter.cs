@@ -1,4 +1,4 @@
-﻿//------------------------------------------------------------
+//------------------------------------------------------------
 // Game Framework
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
@@ -9,7 +9,7 @@ namespace GF.Runtime
 {
     public sealed partial class DebuggerComponent : GameFrameworkComponent
     {
-        private sealed class FpsCounter
+        public sealed class FpsCounter
         {
             private float m_UpdateInterval;
             private float m_CurrentFps;

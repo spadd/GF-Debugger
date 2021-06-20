@@ -1,4 +1,4 @@
-﻿//------------------------------------------------------------
+//------------------------------------------------------------
 // Game Framework
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
@@ -13,7 +13,7 @@ namespace GF.Runtime
 {
     public sealed partial class DebuggerComponent : GameFrameworkComponent
     {
-        private abstract class ScrollableDebuggerWindowBase : IDebuggerWindow
+        public abstract class ScrollableDebuggerWindowBase : IDebuggerWindow
         {
             private const float TitleWidth = 240f;
             private Vector2 m_ScrollPosition = Vector2.zero;

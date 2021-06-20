@@ -1,4 +1,4 @@
-﻿//------------------------------------------------------------
+//------------------------------------------------------------
 // Game Framework
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
@@ -12,7 +12,7 @@ namespace GF.Runtime
 {
     public sealed partial class DebuggerComponent : GameFrameworkComponent
     {
-        private sealed class GraphicsInformationWindow : ScrollableDebuggerWindowBase
+        public sealed class GraphicsInformationWindow : ScrollableDebuggerWindowBase
         {
             protected override void OnDrawScrollableWindow()
             {

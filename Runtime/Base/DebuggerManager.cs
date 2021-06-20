@@ -10,7 +10,7 @@ namespace GF.Debugger
     /// <summary>
     /// 调试器管理器。
     /// </summary>
-    internal sealed partial class DebuggerManager : GameFrameworkModule, IDebuggerManager
+    public sealed partial class DebuggerManager : GameFrameworkModule, IDebuggerManager
     {
         private readonly DebuggerWindowGroup m_DebuggerWindowRoot;
         private bool m_ActiveWindow;

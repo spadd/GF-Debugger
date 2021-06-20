@@ -1,4 +1,4 @@
-﻿//------------------------------------------------------------
+//------------------------------------------------------------
 // Game Framework
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
@@ -17,7 +17,7 @@ namespace GF.Runtime
 {
     public sealed partial class DebuggerComponent : GameFrameworkComponent
     {
-        private sealed partial class RuntimeMemorySummaryWindow : ScrollableDebuggerWindowBase
+        public sealed partial class RuntimeMemorySummaryWindow : ScrollableDebuggerWindowBase
         {
             private readonly List<Record> m_Records = new List<Record>();
             private readonly Comparison<Record> m_RecordComparer = RecordComparer;

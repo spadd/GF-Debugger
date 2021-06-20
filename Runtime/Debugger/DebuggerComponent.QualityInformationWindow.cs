@@ -1,4 +1,4 @@
-﻿//------------------------------------------------------------
+//------------------------------------------------------------
 // Game Framework
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
@@ -12,7 +12,7 @@ namespace GF.Runtime
 {
     public sealed partial class DebuggerComponent : GameFrameworkComponent
     {
-        private sealed class QualityInformationWindow : ScrollableDebuggerWindowBase
+        public sealed class QualityInformationWindow : ScrollableDebuggerWindowBase
         {
             private bool m_ApplyExpensiveChanges = false;
 

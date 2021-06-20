@@ -1,4 +1,4 @@
-﻿//------------------------------------------------------------
+//------------------------------------------------------------
 // Game Framework
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
@@ -14,7 +14,7 @@ namespace GF.Runtime
 {
     public sealed partial class DebuggerComponent : GameFrameworkComponent
     {
-        private sealed class ReferencePoolInformationWindow : ScrollableDebuggerWindowBase
+        public sealed class ReferencePoolInformationWindow : ScrollableDebuggerWindowBase
         {
             private readonly Dictionary<string, List<ReferencePoolInfo>> m_ReferencePoolInfos = new Dictionary<string, List<ReferencePoolInfo>>(StringComparer.Ordinal);
             private readonly Comparison<ReferencePoolInfo> m_NormalClassNameComparer = NormalClassNameComparer;

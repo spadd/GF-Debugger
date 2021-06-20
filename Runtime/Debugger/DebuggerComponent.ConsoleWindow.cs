@@ -16,7 +16,7 @@ namespace GF.Runtime
     public sealed partial class DebuggerComponent : GameFrameworkComponent
     {
         [Serializable]
-        private sealed class ConsoleWindow : IDebuggerWindow
+        public sealed class ConsoleWindow : IDebuggerWindow
         {
             private readonly Queue<LogNode> m_LogNodes = new Queue<LogNode>();
 
@@ -484,7 +484,7 @@ namespace GF.Runtime
                 return Utility.Text.Format("<color=#{0:x2}{1:x2}{2:x2}{3:x2}>[{4:HH:mm:ss.fff}][{5}] {6}</color>", color.r, color.g, color.b, color.a, logNode.LogTime.ToLocalTime(), logNode.LogFrameCount, logNode.LogMessage);
             }
 
-            internal Color32 GetLogStringColor(LogType logType)
+            public Color32 GetLogStringColor(LogType logType)
             {
                 Color32 color = Color.white;
                 switch (logType)

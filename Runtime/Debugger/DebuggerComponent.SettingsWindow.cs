@@ -11,7 +11,7 @@ namespace GF.Runtime
 {
     public sealed partial class DebuggerComponent : GameFrameworkComponent
     {
-        private sealed class SettingsWindow : ScrollableDebuggerWindowBase
+        public sealed class SettingsWindow : ScrollableDebuggerWindowBase
         {
             private DebuggerComponent m_DebuggerComponent = null;
             //private SettingComponent m_SettingComponent = null;
