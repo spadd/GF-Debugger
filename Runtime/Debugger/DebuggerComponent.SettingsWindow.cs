@@ -38,21 +38,19 @@ namespace GF.Runtime
 
             public override void Initialize(params object[] args)
             {
-                m_DebuggerComponent = GameEntry.GetComponent<DebuggerComponent>();
-                if (m_DebuggerComponent == null)
+                if (args.Length == 0)
                 {
                     Log.Fatal("Debugger component is invalid.");
                     return;
                 }
 
-                /*
-                m_SettingComponent = GameEntry.GetComponent<SettingComponent>();
-                if (m_SettingComponent == null)
+                m_DebuggerComponent = args[0] as DebuggerComponent;
+
+                if (m_DebuggerComponent == null)
                 {
-                    Log.Fatal("Setting component is invalid.");
+                    Log.Fatal("Debugger component is invalid.");
                     return;
                 }
-                */
 
                 m_LastIconX = GetFloat("Debugger.Icon.X", DefaultIconRect.x);
                 m_LastIconY = GetFloat("Debugger.Icon.Y", DefaultIconRect.y);

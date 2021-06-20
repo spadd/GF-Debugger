@@ -203,7 +203,7 @@ namespace GF.Runtime
             RegisterDebuggerWindow("Profiler/Memory/TextAsset", m_RuntimeMemoryTextAssetInformationWindow);
             RegisterDebuggerWindow("Profiler/Memory/ScriptableObject", m_RuntimeMemoryScriptableObjectInformationWindow);
             RegisterDebuggerWindow("Profiler/Reference Pool", m_ReferencePoolInformationWindow);
-            RegisterDebuggerWindow("Other/Settings", m_SettingsWindow);
+            RegisterDebuggerWindow("Other/Settings", m_SettingsWindow, this);
 
             switch (m_ActiveWindow)
             {
