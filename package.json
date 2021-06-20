@@ -1,0 +1,15 @@
+{
+  "name": "gameframework.debugger",
+  "displayName": "GF-Debugger",
+  "version": "1.0.0",
+  "unity": "2020.3",
+  "unityRelease": "10f1",
+  "description": "Debugger Of GameFramework",
+  "keywords": [
+    "gameframework",
+    "debugger"
+  ],
+  "license": "MIT",
+  "category": "GF",
+  "hideInEditor": false
+}
